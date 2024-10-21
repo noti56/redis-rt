@@ -13,7 +13,7 @@
 //   }, 3000);
 // })();
 
-export * from "./consts";
-export * from "./BaseModel";
-export * from "./Model";
-export * from "./RedisClient";
+export { Schema, delimeter } from "./consts";
+export { BaseModel } from "./BaseModel";
+export { Model } from "./Model";
+export { RedisClient } from "./RedisClient";
