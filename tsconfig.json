@@ -4,12 +4,10 @@
     "declaration": true, // Generate .d.ts files
     "declarationDir": "./dist", // Output directory for .d.ts files
     "module": "commonjs",
-    "target": "es6",
-    "strict": true,
-    "esModuleInterop": true
-  },
-  "include": [
-    "src/**/*", // Include all source files in src
-    "types.d.ts" // Include your custom types file
-  ]
+    "target": "ES2020",
+    "strict": true
+    // "esModuleInterop": true
+  }
+
+  // "exclude": ["node_modules"]
 }
