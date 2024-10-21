@@ -1,6 +1,6 @@
 import { BehaviorSubject, tap } from "rxjs";
 import { ZodTypeAny } from "zod";
-import { Schema } from "./consts";
+import { Schema } from "./types";
 
 export class Listeners<T extends ZodTypeAny> {
   constructor() {}

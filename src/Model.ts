@@ -1,7 +1,8 @@
 import { ZodTypeAny } from "zod";
-import { delimeter, Schema } from "./consts";
+import { delimeter } from "./consts";
 import { BaseModel } from "./BaseModel";
 import { Listeners } from "./Listeners";
+import { Schema } from "./types";
 
 export class Model<T extends ZodTypeAny> extends BaseModel<T> {
   constructor(private modelName: string, public schema: T) {

@@ -1,6 +1,6 @@
 import { ZodTypeAny } from "zod";
-import { Schema } from "./consts";
 import { RedisClient } from "./RedisClient";
+import { Schema } from "./types";
 
 export class BaseModel<T extends ZodTypeAny> {
   protected async get(key: string) {
@@ -12,6 +12,6 @@ export class BaseModel<T extends ZodTypeAny> {
     return RedisClient.getInstance(null).db.set(key, JSON.stringify(value));
   }
   protected del(key: string) {
-    return RedisClient.getInstance(null).db.del(key) as Promise<void>;
+    return RedisClient.getInstance(null).db.del(key);
   }
 }
