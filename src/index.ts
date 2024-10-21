@@ -13,7 +13,7 @@
 //   }, 3000);
 // })();
 
-export * from "./types";
+export * from "./consts";
 export * from "./BaseModel";
 export * from "./Model";
 export * from "./RedisClient";

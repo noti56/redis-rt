@@ -1,5 +1,5 @@
 import { ZodTypeAny } from "zod";
-import { Schema } from "./types";
+import { Schema } from "./consts";
 import { RedisClient } from "./RedisClient";
 
 export class BaseModel<T extends ZodTypeAny> {

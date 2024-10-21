@@ -1,5 +1,5 @@
 import { ZodTypeAny } from "zod";
-import { delimeter, Schema } from "./types";
+import { delimeter, Schema } from "./consts";
 import { BaseModel } from "./BaseModel";
 import { Listeners } from "./Listeners";
 
