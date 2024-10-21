@@ -1,6 +1,6 @@
 {
   "name": "redis-rt",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -9,6 +9,10 @@
     "dev": "tsx watch ./src",
     "build": "rm -rf ./dist &&  tsc"
   },
+  "files": [
+    "dist",
+    "types.d.ts"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/noti56/redis-rt.git"
