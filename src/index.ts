@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { Model } from "./Model";
-import "./redisClient";
+import { RedisClient } from "./RedisClient";
+RedisClient.getInstance({ url: "redis://localhost:6379" });
 
 const movement = new Model("movement", z.object({ x: z.number(), y: z.number() }));
 (async () => {
@@ -9,6 +10,6 @@ const movement = new Model("movement", z.object({ x: z.number(), y: z.number() }
 
   setTimeout(() => {
     // Correct way to update the model
-    movement.update("1", { y: 10, x: 50 });
+    movement.update("1", { y: 10, x: 52 });
   }, 3000);
 })();

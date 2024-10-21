@@ -1,5 +1,5 @@
 {
-  "name": "redis-rt-ws",
+  "name": "redis-rt",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,8 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx watch ./src"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noti56/redis-rt.git"
+  },
   "keywords": [],
-  "author": "",
+  "author": "Netanel Halevi",
   "license": "ISC",
   "devDependencies": {
     "tsx": "^4.19.1",
